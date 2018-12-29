@@ -1,0 +1,38 @@
+.page3-main {
+    display: grid;
+    grid-template-columns: 650px auto;
+}
+.btn-group {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.btn-group button {
+    display: block;
+    background: none;
+    border-radius: 10px;
+    margin: 5px;
+    width: 450px;
+    height: 75px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 20pt;
+    cursor: pointer;
+}
+.btn-group button:hover {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 5px;
+    width: 450px;
+    height: 75px;
+    cursor: pointer;
+}
+.btn-group button.active {
+    color: #ffffff;
+    background: linear-gradient( 280deg, #ABDCFF 10%, #0396FF 100%);
+}
+.page3-main > article {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}

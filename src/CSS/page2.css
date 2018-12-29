@@ -1,0 +1,64 @@
+.page-h1 {
+    text-align: center;
+    font-size: 28pt;
+}
+.line {
+    margin: 20px 720px 100px 720px;
+    background-color: gray;
+    width: 82px;
+    height: 6px;
+    z-index: 2;
+}
+.card-group {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin: 0px 180px 100px 180px;
+}
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 0px 21px 0px rgba(159, 159, 159, 0.3);
+    width: 270px;
+    height: 300px;
+    z-index: 1;
+}
+.card > div {
+    margin: 40px 0px 0px 88px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    font-size: 50px;
+    text-align: center;
+}
+.card > div > i {
+    margin:25px 0px 0px 0px;
+    background: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-btn {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 140px 0px 0px 60px;
+    width: 150px;
+    height: 50px;
+    z-index: 2;
+    cursor: pointer;
+}
+.card-btn:hover {
+    transition: background-color 0.5s;
+    background-color: #8EC5FC;
+}
+.all-skill-btn {
+    background-color: #21D4FD;
+    background-image: linear-gradient(270deg, #21D4FD 0%, #B721FF 100%);
+    color: #ffffff;
+    font-size: 16pt;
+    border-radius: 10px;
+    margin: 0px 615px 75px 615px;
+    width: 300px;
+    height: 75px;
+}
