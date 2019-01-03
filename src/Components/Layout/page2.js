@@ -13,49 +13,57 @@ export default class Page2 extends Component {
                         <div>
                             <i className="fab fa-html5"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>HTML</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-css3-alt"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>CSS</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-js-square"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>JavaScript</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-react"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>React.js</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-node"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>node.js</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-php"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>PHP</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fab fa-laravel"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>Laravel</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                     <article className="card">
                         <div>
                             <i className="fas fa-bold"></i>
                         </div>
-                        <button className="card-btn">Go</button>
+                        <h1>BootStrap4</h1>
+                        <button className="card-btn">View Percent</button>
                     </article>
                 </div>
                 <button className="all-skill-btn">SEE ALL MY SKILL</button>

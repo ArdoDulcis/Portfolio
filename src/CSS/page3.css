@@ -7,6 +7,7 @@
     grid-column-end: 2;
     margin-left: 80px;
     margin-bottom: 30px;
+    max-width: 450px;
 }
 .btn-group button {
     display: block;
@@ -19,20 +20,34 @@
     font-size: 20pt;
     cursor: pointer;
 }
-.btn-group button:hover {
+.btn-group button.disabled:hover {
     display: block;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 0;
+    border-bottom: solid 3px #0396FF;
     margin: 5px;
     width: 450px;
     height: 75px;
     cursor: pointer;
 }
-.btn-group button.active {
+.btn-group button.enabled {
     color: #ffffff;
     background: linear-gradient( 280deg, #ABDCFF 10%, #0396FF 100%);
+    animation: Background;
+    animation-duration: 0.3s;
 }
-.page3-main > article {
+#form {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    max-width: 769px;
+    max-height: 485px;
+}
+@keyframes Background {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

@@ -3,13 +3,13 @@ import '../../CSS/page3.css';
 import {JS, HTML, CSS, Algorithm, FW, FE } from './page3_form.js';
 
 export default class Page3 extends Component {
-
     state = {
-        form : null
+        form : <JS/>
     };
 
     ChangingForm = (e) => {
-        let id = e.target.id;
+        let elem = e.target;
+        let id = elem.id;
         let form = {};
         switch (id) {
             case 'JS':
@@ -22,10 +22,10 @@ export default class Page3 extends Component {
                 form = <CSS/>;
                 break;
             case 'FrameWork':
-                form = <Algorithm/>;
+                form = <FW/>;
                 break;
             case 'Algorithm':
-                form = <FW/>;
+                form = <Algorithm/>;
                 break;
             case 'Front-end':
                 form = <FE/>;
@@ -34,9 +34,16 @@ export default class Page3 extends Component {
                 form = null;
                 break;
         }
-        console.log(form);
+        document.querySelector(".enabled").className = "disabled";
+        elem.className = "enabled";
         this.setState({
-            form : form
+            form : form,
+        });
+        document.getElementById("form").animate([
+            { opacity: 0 },
+            { opacity: 1 }
+        ], {
+            duration: 1000,
         });
     };
 
@@ -47,14 +54,14 @@ export default class Page3 extends Component {
                 <div className="line"></div>
                 <div className="page3-main">
                     <div className="btn-group">
-                        <button id="JS" className="active" onClick={this.ChangingForm}>JavaScript</button>
-                        <button id="HTML" onClick={this.ChangingForm}>HTML</button>
-                        <button id="CSS" onClick={this.ChangingForm}>CSS</button>
-                        <button id="FrameWork" onClick={this.ChangingForm}>New JS FrameWork</button>
-                        <button id="Algorithm" onClick={this.ChangingForm}>Algorithm</button>
-                        <button id="Front-end" onClick={this.ChangingForm}>Front-End</button>
+                        <button id="JS" className="enabled" onClick={this.ChangingForm}>JavaScript</button>
+                        <button id="HTML" className="disabled" onClick={this.ChangingForm}>HTML</button>
+                        <button id="CSS" className="disabled" onClick={this.ChangingForm}>CSS</button>
+                        <button id="Algorithm" className="disabled" onClick={this.ChangingForm}>Algorithm</button>
+                        <button id="FrameWork" className="disabled" onClick={this.ChangingForm}>New JS FrameWork</button>
+                        <button id="Front-end" className="disabled" onClick={this.ChangingForm}>Front-End</button>
                     </div>
-                    <article className="Form">
+                    <article id="form">
                         {this.state.form}
                     </article>
                 </div>

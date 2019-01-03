@@ -1,0 +1,105 @@
+.progress {
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    z-index: 2;
+}
+.now {
+    background: #a131d8;
+}
+/*-- Navigation --*/
+#nav {
+    display: inline;
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px 0 10px;
+    width: 0;
+    border: solid 2px #21D4FD;
+    border-radius: 10px;
+    z-index: 5;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+#nav > li{
+    float: right;
+}
+#nav > li a {
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#nav.active {
+    animation: openNav;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#nav:not(.active) {
+    animation: closeNav;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.btn-nav {
+    position: fixed;
+    background: #21D4FD;
+    top: -55px;
+    right: 25px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14pt;
+    z-index: 10;
+    animation: showNav;
+    animation-duration: 0.3s;
+}
+.btn-nav > i {
+    transform: rotate(0deg);
+    transition-duration: 0.2s;
+}
+.btn-nav.open > i {
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
+}
+@keyframes showNav {
+    from {
+        top: -55px;
+    }
+    to {
+        top: 25px;
+    }
+}
+@keyframes hiddenNav {
+    from {
+        top: 25px;
+    }
+    to {
+        top: -55px;
+    }
+}
+@keyframes openNav {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 312px;
+        visibility: visible;
+    }
+}
+@keyframes closeNav {
+    0% {
+        width: 312px;
+    }
+    100% {
+        width: 0;
+        visibility: hidden;
+    }
+}

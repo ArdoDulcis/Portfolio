@@ -61,11 +61,11 @@
     -webkit-text-fill-color: transparent;
 }
 
-/*-- navigation --*/
-nav {
+/*-- Menu-bar --*/
+ul {
     display: inline;
 }
-.nav {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -73,10 +73,10 @@ nav {
     overflow: hidden;
     background-color: transparent;
 }
-.nav > li{
+.menu > li{
     float: right;
 }
-.nav > li a {
+.menu > li a {
     display: block;
     background: linear-gradient(210deg, #ABDCFF 10%, #0396FF 100%);
     -webkit-background-clip: text;
