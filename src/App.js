@@ -5,7 +5,6 @@ import Page1 from './Components/Layout/page1.js';
 import Page2 from './Components/Layout/page2.js';
 import Page3 from './Components/Layout/page3.js';
 import Page4 from './Components/Layout/page4.js';
-import './App.css';
 
 class App extends Component {
     render() {

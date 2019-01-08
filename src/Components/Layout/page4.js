@@ -8,11 +8,18 @@ export default class Page4 extends Component {
                 <h1 className="page-h1">Get Contact</h1>
                 <div className="line"></div>
                 <div className="page4-main">
-                    <div className="contact-btn-group">
-                        <button><i className="fas fa-arrow-left"></i></button>
-                        <button><i className="fas fa-arrow-right"></i></button>
+                    <div>
+                        <i className="fab fa-twitter-square"></i>
+                        <p>@xeilp</p>
                     </div>
-                    <div className="contact-card-group"></div>
+                    <div>
+                        <i className="fab fa-github-square"></i>
+                        <p>https://github.com/xeilp91</p>
+                    </div>
+                    <div>
+                        <i className="fab fa-google-plus-square"></i>
+                        <p>ardo.dulcis@gmail.com</p>
+                    </div>
                 </div>
             </section>
         )

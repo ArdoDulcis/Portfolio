@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import '../../CSS/navigation.css';
 
 export default class Navigation extends Component {
-    state = {
-        scroll : 0,
-        className : "btn-nav",
-        NavClassName : ""
-    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            scroll : 0,
+            className : "btn-nav",
+            NavClassName : ""
+        }
+    }
 
     componentDidMount() {
         window.addEventListener('scroll', this.onScrollmove)
@@ -24,11 +28,11 @@ export default class Navigation extends Component {
             scroll : scrolled
         });
         let navbtn = document.querySelector(".btn-nav");
-        if(this.state.scroll > 32 && navbtn.style.animationName !== "showNav") {
-            navbtn.style.animationName = "showNav";
+        if(this.state.scroll > 32) {
+            navbtn.style.animation = "showNav 0.3s";
             navbtn.style.top = 25 + "px";
-        } else if(this.state.scroll < 32) {
-            navbtn.style.animationName = "hiddenNav";
+        } else if(this.state.scroll < 32  && navbtn.style.animationName === "showNav") {
+            navbtn.style.animation = "hiddenNav 0.3s";
             navbtn.style.top = -55 + "px";
             this.setState({
                 className : "btn-nav",

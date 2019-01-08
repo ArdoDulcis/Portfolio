@@ -3,9 +3,17 @@ import '../../CSS/page3.css';
 import {JS, HTML, CSS, Algorithm, FW, FE } from './page3_form.js';
 
 export default class Page3 extends Component {
-    state = {
-        form : <JS/>
-    };
+    constructor(props){
+        super(props)
+        this.state = {
+            form : <JS/>,
+            componentType : "JS"
+        }
+    }
+
+    shouldComponentUpdate(nextState){
+        return this.state.componentType !== nextState.componentType;
+    }
 
     ChangingForm = (e) => {
         let elem = e.target;
@@ -38,6 +46,7 @@ export default class Page3 extends Component {
         elem.className = "enabled";
         this.setState({
             form : form,
+            componentType : id
         });
         document.getElementById("form").animate([
             { opacity: 0 },

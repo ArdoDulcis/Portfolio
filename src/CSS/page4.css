@@ -1,29 +1,20 @@
 .page4-main {
     display: grid;
-    grid-template-rows: 50px 300px;
+    grid-template-rows: auto auto auto auto;
     background: linear-gradient( 180deg, #ABDCFF 10%, #0396FF 100%);
     border-radius: 10px 0 0 10px;
     margin: 100px 0 100px 950px;
 }
-.contact-btn-group {
-    margin: 10px 0 0 75px;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.page4-main > div {
+    margin: 20px 0 20px 25px;
 }
-.contact-btn-group > button {
-    background: transparent;
-}
-.contact-btn-group > button > i {
+.page4-main > div > i {
     color: #ffffff;
+    font-size: 34pt;
 }
-.contact-btn-group > button > .fa-arrow-left {
-    font-size: 45pt;
-    margin: 0 10px 0 0;
-}
-.contact-btn-group > button > .fa-arrow-right {
+.page4-main > div > p {
+    display: inline;
+    padding: 10px 0 10px 20px;
+    color: #f1f1f1;
     font-size: 20pt;
-}
-.contact-card-group {
-    grid-row-start: 2;
-    grid-row-end: 3;
 }

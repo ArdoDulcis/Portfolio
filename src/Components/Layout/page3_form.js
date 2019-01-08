@@ -2,7 +2,10 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Media from '@material-ui/core/CardMedia';
-import img1 from '../../static/image/tgs2018.jpg';
+import JSimg from '../../static/image/JS.jpeg';
+import HTMLimg from '../../static/image/HTML.jpg';
+import CSS3img from '../../static/image/CSS3.jpg';
+import FWimg from '../../static/image/Framework.jpg'
 
 const PaperStyle = {
     paddingTop : 24 + "px",
@@ -12,27 +15,35 @@ const PaperStyle = {
 };
 
 const imgStyle = {
-    height: 150,
+    height: 250,
     marginTop : 12 + "px",
     marginBottom : 12 + "px"
 };
 
-const ParagraphStyle = {
-  paddingTop : 16 + "px"
+const FontSize = {
+  h1_fontsize : 12 + "pt",
+  p_fontsize : 10 + "pt"
 };
 
 const JS = () => {
     return(
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
-                TEST FORM 1
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
+                JavaScript
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
-                component="image"
+                image={JSimg}
             />
-            <Typography component="p">
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
                 Area JS
             </Typography>
         </Paper>
@@ -41,31 +52,46 @@ const JS = () => {
 const HTML = () => {
     return(
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
-                TEST FORM 1
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
+                HTML
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
+                image={HTMLimg}
             />
-            <Typography component="p">
-                Area JS
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
+                HTML
             </Typography>
         </Paper>
     )
 };
 const CSS = () => {
     return(
-
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
-                TEST FORM 1
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
+                CSS
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
+                image={CSS3img}
             />
-            <Typography component="p">
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
                 Area JS
             </Typography>
         </Paper>
@@ -74,31 +100,46 @@ const CSS = () => {
 const FW = () => {
     return(
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
-                TEST FORM 1
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
+                New FrameWork
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
+                image={FWimg}
             />
-            <Typography component="p">
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
                 Area JS
             </Typography>
         </Paper>
-
     )
 };
 const Algorithm = () => {
     return(
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
                 TEST FORM 1
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
+                image=""
             />
-            <Typography component="p">
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
                 Area JS
             </Typography>
         </Paper>
@@ -107,14 +148,22 @@ const Algorithm = () => {
 const FE = () => {
     return(
         <Paper elevation={4} style={PaperStyle}>
-            <Typography component="h1">
-                TEST FORM 1
+            <Typography
+                component="h1"
+                variant="h4"
+                align="left"
+            >
+                Front - End - Skill
             </Typography>
             <Media
                 style={imgStyle}
-                image={img1}
+                image=""
             />
-            <Typography component="p" style={ParagraphStyle}>
+            <Typography
+                component="p"
+                variant="h5"
+                color="textSecondary"
+            >
                 Area JS
             </Typography>
         </Paper>

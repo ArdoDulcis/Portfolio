@@ -4,10 +4,10 @@
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: top-bg-animation 15s ease infinite;
-    border-radius: 0% 50% 50% 0%;
+    border-radius: 0 50% 50% 0;
     width: auto;
     height: 1049px;
-    padding: 25px 70px 0px 70px;
+    padding: 25px 70px 0 70px;
 }
 @keyframes top-bg-animation {
     0% { background-position: 0% 50% }
@@ -21,7 +21,7 @@
 .top-main {
     grid-row-start: 2;
     grid-row-end: 3;
-    padding: 0px 150px 0px 150px;
+    padding: 0 150px 0 150px;
 }
 .top-h1 {
     display: inline;
@@ -90,7 +90,7 @@ ul {
 /*-- text animation --*/
 
 .top-main > div {
-    display:inline-block;
+    display:block;
     overflow:hidden;
     white-space:nowrap;
 }
@@ -98,14 +98,15 @@ ul {
 .top-main > div:first-of-type {
     font-size: 48pt;
     color: #ffffff;
-    margin: 80px 0px 0px 150px;
+    margin: 80px 0 0 150px;
     animation: showup 5s infinite;
 }
 
 .top-main > div:last-of-type {
     font-size: 34pt;
     color: #ffffff;
-    width:0px;
+    width:0;
+    margin-left: 250px;
     animation: reveal 5s infinite;
 }
 

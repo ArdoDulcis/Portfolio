@@ -58,8 +58,6 @@
     color: #ffffff;
     font-size: 14pt;
     z-index: 10;
-    animation: showNav;
-    animation-duration: 0.3s;
 }
 .btn-nav > i {
     transform: rotate(0deg);
@@ -70,28 +68,30 @@
     transition-duration: 0.2s;
 }
 @keyframes showNav {
-    from {
+    0% {
+        display: block;
         top: -55px;
     }
-    to {
+    100% {
         top: 25px;
     }
 }
 @keyframes hiddenNav {
-    from {
+    0% {
         top: 25px;
     }
-    to {
+    100% {
+        display: none;
         top: -55px;
     }
 }
 @keyframes openNav {
     0% {
         width: 0;
+        visibility: visible;
     }
     100% {
         width: 312px;
-        visibility: visible;
     }
 }
 @keyframes closeNav {

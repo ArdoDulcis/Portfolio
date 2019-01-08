@@ -18,7 +18,7 @@ export default class Top extends Component {
                     </ul>
                 </div>
                 <div className="top-main">
-                    <div className="first">TEST</div>
+                    <div className="first">ようこそ！</div>
                     <div className="second">
                         <p>TEST@</p>
                     </div>
