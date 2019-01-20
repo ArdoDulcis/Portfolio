@@ -28,10 +28,10 @@ export default class Navigation extends Component {
             scroll : scrolled
         });
         let navbtn = document.querySelector(".btn-nav");
-        if(this.state.scroll > 32) {
+        if(this.state.scroll > 24) {
             navbtn.style.animation = "showNav 0.3s";
             navbtn.style.top = 25 + "px";
-        } else if(this.state.scroll < 32  && navbtn.style.animationName === "showNav") {
+        } else if(this.state.scroll < 24  && navbtn.style.animationName === "showNav") {
             navbtn.style.animation = "hiddenNav 0.3s";
             navbtn.style.top = -55 + "px";
             this.setState({

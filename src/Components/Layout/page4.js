@@ -14,7 +14,7 @@ export default class Page4 extends Component {
                     </div>
                     <div>
                         <i className="fab fa-github-square"></i>
-                        <p>https://github.com/xeilp91</p>
+                        <p>https://github.com/ArdoDulcis</p>
                     </div>
                     <div>
                         <i className="fab fa-google-plus-square"></i>

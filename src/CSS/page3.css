@@ -1,12 +1,16 @@
 .page3-main {
     display: grid;
+    position: relative;
+    z-index: 10;
     grid-template-columns: 650px auto;
 }
 .btn-group {
+    position: relative;
+    z-index: 10;
     grid-column-start: 1;
     grid-column-end: 2;
     margin-left: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     max-width: 450px;
 }
 .btn-group button {
@@ -42,6 +46,9 @@
     margin-bottom: 30px;
     max-width: 769px;
     max-height: 485px;
+}
+#form > div > p {
+    font-family: 'Noto Sans JP', sans-serif;
 }
 @keyframes Background {
     from {

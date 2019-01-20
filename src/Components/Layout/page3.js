@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../CSS/page3.css';
-import {JS, HTML, CSS, Algorithm, FW, FE } from './page3_form.js';
+import {JS, HTML, CSS, Algorithm, FW} from './page3_form.js';
 
 export default class Page3 extends Component {
     constructor(props){
@@ -35,9 +35,6 @@ export default class Page3 extends Component {
             case 'Algorithm':
                 form = <Algorithm/>;
                 break;
-            case 'Front-end':
-                form = <FE/>;
-                break;
             default:
                 form = null;
                 break;
@@ -68,7 +65,6 @@ export default class Page3 extends Component {
                         <button id="CSS" className="disabled" onClick={this.ChangingForm}>CSS</button>
                         <button id="Algorithm" className="disabled" onClick={this.ChangingForm}>Algorithm</button>
                         <button id="FrameWork" className="disabled" onClick={this.ChangingForm}>New JS FrameWork</button>
-                        <button id="Front-end" className="disabled" onClick={this.ChangingForm}>Front-End</button>
                     </div>
                     <article id="form">
                         {this.state.form}

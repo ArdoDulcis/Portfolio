@@ -5,7 +5,7 @@
     top: 0;
     height: 3px;
     width: 100%;
-    z-index: 2;
+    z-index: 250;
 }
 .now {
     background: #a131d8;
@@ -22,7 +22,7 @@
     width: 0;
     border: solid 2px #21D4FD;
     border-radius: 10px;
-    z-index: 5;
+    z-index: 250;
     overflow: hidden;
     background-color: #ffffff;
 }
@@ -57,7 +57,7 @@
     text-align: center;
     color: #ffffff;
     font-size: 14pt;
-    z-index: 10;
+    z-index: 260;
 }
 .btn-nav > i {
     transform: rotate(0deg);
@@ -91,12 +91,12 @@
         visibility: visible;
     }
     100% {
-        width: 312px;
+        width: 340px;
     }
 }
 @keyframes closeNav {
     0% {
-        width: 312px;
+        width: 340px;
     }
     100% {
         width: 0;
