@@ -5,4 +5,4 @@ React.js基盤のポートフォリオです。
 2019.01.20
 
 ### Author
-xeilp91
+ArdoDulcis
